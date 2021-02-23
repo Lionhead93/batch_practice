@@ -10,12 +10,15 @@ spring:
       on-profile: local
 ---
 spring:
+  config:
+    activate:
+      on-profile: mysql
   datasource:
     hikari:
       jdbc-url: jdbc:mysql://localhost:3306/spring_batch
       username: seongwou
       password: seongwou1!
       driver-class-name: com.mysql.cj.jdbc.Driver
-  config:
-    activate:
-      on-profile: mysql
+  batch:
+    job:
+      names: ${job.name:NONE}
