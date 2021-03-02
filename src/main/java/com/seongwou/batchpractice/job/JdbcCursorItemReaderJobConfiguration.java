@@ -57,7 +57,7 @@ public class JdbcCursorItemReaderJobConfiguration {
     private ItemWriter<Pay> jdbcCursorItemWriter() {
         return list -> {
             for (Pay pay: list) {
-                log.info("Current Pay={}", pay);
+                log.info("Current Pay= {}", pay);
             }
         };
     }
