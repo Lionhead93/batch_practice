@@ -28,10 +28,10 @@ public class Pay {
     private String txName;
     private LocalDateTime txDateTime;
 
-    public Pay(Long amount, String txName, String txDateTime) {
+    public Pay(Long amount, String txName, LocalDateTime txDateTime) {
         this.amount = amount;
         this.txName = txName;
-        this.txDateTime = LocalDateTime.parse(txDateTime, FORMATTER);
+        this.txDateTime = txDateTime;
     }
 
     public Pay(Long id, Long amount, String txName, String txDateTime) {

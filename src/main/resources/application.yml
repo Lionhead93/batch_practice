@@ -22,3 +22,8 @@ spring:
   batch:
     job:
       names: ${job.name:NONE}
+
+logging.level.org.springframework.batch: DEBUG
+logging.level.org.springframework.transaction: DEBUG
+logging.level.org.springframework.orm.jpa: DEBUG
+logging.level.org.hibernate.SQL: DEBUG
