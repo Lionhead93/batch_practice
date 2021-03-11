@@ -4,12 +4,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.IOException;
+
 @Service
 public class PayInnerService {
 
-    @Transactional(propagation = Propagation.REQUIRES_NEW)
-    public void transactionInner() {
-        throw new RuntimeException("inner Exception!");
+    @Transactional
+    public void transactionInner() throws IOException {
+        throw new IOException();
     }
 
 }
