@@ -25,7 +25,6 @@ public class PayService {
     private final EntityManager entityManager;
     private final NewTransactionWrapper newTransactionWrapper;
 
-
     @Transactional(rollbackFor = Exception.class)
     public void transactionOuter() {
 

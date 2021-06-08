@@ -32,12 +32,12 @@ spring:
     job:
       names: ${job.name:NONE}
 
-logging.level:
-  org.springframework.batch: DEBUG
-  org.springframework.transaction: DEBUG
-  org.springframework.orm.jpa: DEBUG
-  org.springframework.jdbc: TRACE
-  javax.persistence: TRACE
-  org.hibernate: DEBUG
-  com.zaxxer.hikari.HikariConfig: DEBUG
-  com.zaxxer.hikari: TRACE
+#logging.level:
+#  org.springframework.batch: DEBUG
+#  org.springframework.transaction: DEBUG
+#  org.springframework.orm.jpa: DEBUG
+#  org.springframework.jdbc: TRACE
+#  javax.persistence: TRACE
+#  org.hibernate: DEBUG
+#  com.zaxxer.hikari.HikariConfig: DEBUG
+#  com.zaxxer.hikari: TRACE

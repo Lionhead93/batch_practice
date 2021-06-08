@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class PayInnerService {
+public class PayInnerService implements PayInnerServiceInterface{
 
     @Autowired
     PayRepository payRepository;
